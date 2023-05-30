@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //fråga 1    
+        function matte()
+        {
+            let num1 = 1
+            let num2 = 3
+            let summa = (num1 + num2)
+            alert(summa)
+        }
+        matte()
+    </script>
+
+    <!--Fråga 2-->
+    <p id="demo">Prov</p>
+    <button onclick="document.getElementById('demo').innerHTML = 'Hej'">Klicka mig</button>
+
+    <!--Fråga 3-->
+    <br>
+    <img id="bild"src="kem.jpg" alt="Error" >
+    <script>
+        function Bild()
+        {
+            document.getElementById('bild').src = 'kemo1.jpg'
+        }
+        Bild()
+    </script>
+
+
+<!--Fråga 5-->
+<br>
+<form name="mittForm">
+    <label for="namn">Namn</label>
+    <input type="text" name="Namn" id="namn">
+    <input type="button" value="visa namn" onclick = "värde()">
+</form>
+
+
+<script>
+    function värde(){
+        var formnamn = document.forms["mittForm"]["Namn"].value;
+
+        alert(formnamn)
+    }
+    värde()
+</script>
+</body>
+</html>
